@@ -1,6 +1,6 @@
 import {Root} from './styled';
-import { SegmentGroup } from "@chakra-ui/react"
-const Main = () => {
+
+const Main: React.FC = () => {
 
   return (
     <Root>

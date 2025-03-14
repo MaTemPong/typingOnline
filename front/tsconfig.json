@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",  // 🔥 빌드된 JS 파일이 저장될 폴더 설정
+    "rootDir": "./src",   // 🔥 원본 TS 파일이 있는 폴더 설정
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "strict": true
+  },
+  "exclude": ["node_modules", "build"] 
+}

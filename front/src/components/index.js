@@ -1,4 +1,4 @@
-/**
+.0/**
  * src/components/[ComponentName]/index.js 파일들을 ComponentName으로 import 할 수 있게 해 준다.
  * ex) import { Button } from 'components';
  * [수정 금지]

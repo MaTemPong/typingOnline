@@ -24,3 +24,14 @@ export const Content = styled.section`
   max-height: 90%;
   background-color:rgba(143, 143, 143, 0.3);
 `
+
+export const ProfileRoot = styled.div`
+  display: flex;
+  justify-content: right;
+`
+
+export const Profile = styled.div`
+  width: 200px;
+  height: 50px;
+  background-color:rgba(143, 143, 143, 0.3);
+`

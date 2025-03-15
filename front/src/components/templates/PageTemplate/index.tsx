@@ -1,5 +1,5 @@
 import { Center, SegmentGroup } from '@chakra-ui/react';
-import {Content, Root, SegmentGroupItems, SegmentGroupRoot} from './styled';
+import {Content, Profile, ProfileRoot, Root, SegmentGroupItems, SegmentGroupRoot} from './styled';
 
 interface Props {
   children: React.ReactNode;
@@ -8,19 +8,27 @@ interface Props {
 const PageTemplate: React.FC<Props> = ({children}) => {
 
   return (
-    <Center h={"100vh"} w={"100vw"}>
-      <Root>
-        <header>
-          <SegmentGroupRoot size={"lg"} defaultValue="스피드런">
-            <SegmentGroup.Indicator />
-            <SegmentGroupItems  items={[ "스피드런", "타자대결", "글 작성"]}/>
-          </SegmentGroupRoot>
-        </header>
-        <Content>
-          {children}
-        </Content>
-      </Root>
-    </Center>
+    <>
+      <ProfileRoot style={{width: '100vw', height: '3vh'}}>
+        <Profile>
+
+        </Profile>
+      </ProfileRoot>
+      
+      <Center h={"97vh"} w={"100vw"}>
+        <Root>
+          <header>
+            <SegmentGroupRoot size={"lg"} defaultValue="스피드런">
+              <SegmentGroup.Indicator />
+              <SegmentGroupItems  items={[ "스피드런", "타자대결", "글 작성"]}/>
+            </SegmentGroupRoot>
+          </header>
+          <Content>
+            {children}
+          </Content>
+        </Root>
+      </Center>
+    </>
   ) 
 }
 
